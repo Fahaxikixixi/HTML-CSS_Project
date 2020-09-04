@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="attempt.js/pixel.js"></script>
+		<title>点工网</title>
+		<script src="attempt.js/xx.js"></script>
+		<style type="text/css">
+			.in{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+			}
+			.in-top{
+				background: url(images/bj.png) no-repeat;
+				background-size:contain;
+				height: 100%;
+				width: 100%;				
+			}
+			.in-list{
+				margin-top: .2rem;
+			}
+			.in-list ul{
+				display: flex;
+				position: absolute;
+				width: 90%;
+				margin: 0 auto;
+				text-align: center;
+				margin-left: .4rem;
+				bottom: 1.8rem;
+			}
+			.in-list ul li{
+				position: relative;
+				text-align: center;
+				margin: 0 .08rem;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+			.in-list ul li img{
+				width: 1.18rem;
+			}
+			.in-list li p{
+				font-size: .25rem;
+				color: #555;
+				font-weight: bold;
+				line-height: .7rem;
+				text-align: center;
+			}
+			.in-botton img{
+				position: absolute;
+				transform: rotate(45deg);
+				width: .4rem;
+				bottom: 1rem;
+				left: 47%;
+				
+				transform: scale(.2);
+			}
+			.in-botton button{
+				border: none;
+				background: url("images/cuo.png") no-repeat;
+				background-size:25%;
+				transform: rotate(45deg);
+				position: absolute;
+				height: 2rem;
+				width: 2rem;
+				bottom:-.8rem;
+				left: 37%;
+				outline: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="in">
+			<div class="in-top"></div>
+			<div class="in-list">
+				<ul class="list">
+					<li>
+						<a href="IssueRecruitWorkers.html">
+							<img src="./images/button1.png"/>
+							<p>发布招工</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueJob.html">
+							<img  src="images/button2.png"/>
+							<p>发布找活</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueMachineryRent.html">
+							<img  src="images/button3.png"/>
+							<p>机械求租</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueMachinery.html">
+							<img src="images/button4.png"/>
+							<p>机械出租</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueBiddingAndPurchase.html">
+							<img src="images/button3.png"/>
+							<p>招标采购</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="in-botton">
+				<!-- <a href="index.html"> -->
+					<button  onclick="ick()"></button>
+				<!-- </a> -->
+			</div>
+		</div>
+		<script type="text/javascript" src="attempt.js/js"></script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+.change {
+    padding-top: 65px;
+}
+
+.datalist {
+    width: 1100px;
+    box-shadow: #e9e8e8 10px -10px 10px -2px;
+    border: #e9e8e8 solid 1px;
+}
+
+.datalist li {
+    height: 75px;
+    line-height: 75px;
+    border-bottom: #f0f4f5 solid 2px;
+    border-left: #f0f4f5 solid 2px;
+    color: #333333;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.textbor {
+    display: inline-block;
+    width: 130px;
+    margin-right: 50px;
+}
+
+.data {
+    color: #666666;
+    font-size: 14px;
+    /* margin-left: 100px; */
+}
+
+.data img {
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+}
+
+.textstyle {
+    float: right;
+    color: #5779f9;
+}

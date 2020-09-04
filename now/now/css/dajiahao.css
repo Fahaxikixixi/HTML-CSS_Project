@@ -1,0 +1,313 @@
+/*主要架子部分*/
+
+
+/* 清除浮动 */
+
+.clear {
+    zoom: 1;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+#header,
+#footer {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+.container-wrap {
+    width: 100%;
+}
+
+.aside {
+    width: 200px;
+    height: 100%;
+    min-height: 800px;
+    /* margin-left: -100%; */
+}
+
+.content-wrap {
+    height: 100%;
+    width: 0px;
+}
+
+.contents {
+    height: 100%;
+    margin-left: 235px;
+}
+
+.contents::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/*内容样式*/
+
+.header {
+    border-bottom: #a9bfc6 solid 1px;
+}
+
+.headercenter {
+    height: 70px;
+    line-height: 67px;
+    margin: 0 43px 0 28px;
+}
+
+.textcolor {
+    color: #ff0000 !important;
+}
+
+.headerleft {
+    float: left;
+}
+
+.headerleft a {
+    font-size: 25px;
+    color: #333333;
+}
+
+.headerleft img {
+    vertical-align: middle;
+}
+
+.headerright {
+    float: right;
+    height: 67px;
+}
+
+.headerright a {
+    color: #666666;
+    font-size: 15px;
+}
+
+.headerright img {
+    width: 27px;
+    height: 21px;
+    vertical-align: middle;
+}
+
+.addborder {
+    padding: 0 15px;
+    border-left: #dcdcdc solid 1px;
+    border-right: #dcdcdc solid 1px;
+}
+
+.add {
+    width: 24px !important;
+    height: 22px !important;
+    margin-right: 10px;
+}
+
+.addpadding {
+    margin: 0 10px;
+}
+
+.content {
+    height: 100%;
+    width: 1480px;
+    margin: 0 43px 0 28px;
+    zoom: 1;
+}
+
+.content_list {
+    float: left;
+    width: 154px;
+    height: 100%;
+    margin-left: 35px;
+}
+
+.content_list li {
+    height: 59px;
+    width: 160px;
+    line-height: 59px;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.content_list li img {
+    height: 21px;
+    width: 21px;
+    vertical-align: middle;
+}
+
+.distance {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.content_new {
+    float: left;
+    min-width: 1220px;
+    margin: 0 auto;
+    border-left: #a9bfc6 solid 1px;
+    padding-left: 48px;
+    padding-bottom: 70px;
+}
+
+.banner {
+    height: 66px;
+    line-height: 66px;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.listclear {
+    width: 100%;
+}
+
+.listclear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.banner ul li,
+.banner span {
+    float: left;
+    line-height: 66px;
+}
+
+.both {
+    margin: 0 100px;
+}
+
+.banner a {
+    color: #333333;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.bannertext {
+    display: inline-block;
+    width: 48px;
+    height: 21px;
+    background-color: #5779f9;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 21px !important;
+    margin-right: 30px;
+    margin-top: 23px;
+}
+
+.textstyle {
+    color: #999999 !important;
+    font-size: 13px !important;
+}
+
+.textalign {
+    vertical-align: middle;
+}
+
+.newlist {
+    height: 100%;
+    /* width: 1200px; */
+    zoom: 1;
+}
+
+.newlist li {
+    height: 65px;
+    width: 400px;
+}
+
+.textline {
+    line-height: 65px;
+}
+
+.textline::after {
+    content: '';
+    /* position: absolute; */
+    left: 0;
+    top: 109px;
+    width: 230px;
+    height: 2px;
+    border-bottom: #a9bfc6 solid 1px;
+}
+
+.colorbor {
+    display: inline-block;
+    background-color: #f00000;
+    color: #ffffff !important;
+    font-size: 13px !important;
+    margin-left: 20px;
+    line-height: normal;
+    padding: 1px 5px;
+}
+
+.newlist li span,
+.newlist li p {
+    color: #333333;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.newlist li a img {
+    float: left;
+    width: 80px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.textbor {
+    display: inline-block;
+    color: #7c96fa !important;
+    font-size: 8px !important;
+    padding: 0 1px;
+    border: #7c96fa solid 1px;
+    margin-left: 19px;
+}
+
+.newlist_left,
+.newlist_right {
+    float: left;
+    /* width: 600px; */
+    height: 100%;
+}
+
+.newlist_right {
+    margin-left: 300px;
+}
+
+.imgstyle {
+    width: 51px !important;
+    height: 51px !important;
+}
+
+.flo {
+    float: left;
+}
+
+.footer {
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-top: #a9bfc6 solid 1px;
+    clear: both;
+}
+
+.footer a {
+    color: #666666;
+    font-size: 15px;
+    margin: 0 32px;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}

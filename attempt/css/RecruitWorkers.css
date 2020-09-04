@@ -1,0 +1,41 @@
+
+.list-item-box{
+    width: 100%;
+    position: absolute;
+    height: 5.8rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    bottom: 4.2rem;
+    background-color: #ffffff;
+    display: none;
+}
+.list-item-box li{
+    width: 100%;
+    height: .5rem;
+    border-bottom: #e8e6e3 solid .01rem;
+    padding: .15rem .25rem;
+    font-size: .28rem;
+    
+}
+.city-nexts{
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 5.8rem;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    bottom: 4.2rem;
+    
+}
+.city-bj{
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 5.8rem;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    bottom: 4.2rem;
+    display: none;
+}

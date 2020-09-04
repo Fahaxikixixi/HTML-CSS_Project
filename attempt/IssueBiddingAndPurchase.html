@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/CollectionRecruitment.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<script src="attempt.js/pixel.js"></script>
+		<title>发布招标采购信息</title>
+		<style>
+			.home{
+				background-color: #FFFFFF;
+			}
+			.main{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-h{							
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: .3rem;
+				border-bottom:.01rem dotted #cecdd1;
+				padding-bottom: .3rem;
+			}
+			.main-h p{
+				color: #3185E6;
+				font-size: .31rem;
+				font-weight: bold;
+				letter-spacing: .03rem;
+			}
+			.main-text{
+				display: flex;
+				margin: .4rem .1rem;
+			}
+			.main-text span{
+				width: 1.3rem;
+				height: .4rem;
+				font-size: .3rem;
+				text-align-last: justify;
+				color: #000000;
+				font-weight: bold;
+				margin-left: .15rem;
+			}
+			.main-text input{
+				border: none;
+				background-color: #FFFFFF;
+				font-size: .26rem;
+				padding-left: .6rem;
+				letter-spacing: .05rem;
+			}
+			.main-dis{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-text textarea{
+				border: none;
+				background-color: #FFFFFF;
+				outline: none;
+				width: 93%;
+				letter-spacing: .02rem;
+				height: 2.2rem;
+				margin-top:.2rem ;
+				margin-left: .4rem;
+				font-size: .3rem;
+			}
+			.main-texts{
+				color: #666;
+				text-align: right;
+				font-size: .3rem;	
+			}
+			.go{
+				width: 100%;
+				text-align: center;
+			}
+			.go button{
+				border: none;
+				color: #FFFFFF;
+				height: .75rem;
+				width: 30%;
+				font-size: .3rem;
+				border-radius: .12rem;
+				background: linear-gradient(0deg, #1e9aff, #1c54f9);
+				margin-top:.18rem ;
+			}
+			:focus{
+				outline:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="home">
+			<div class="Top">
+				<span><a href="javascript:history.go(-1);" onClick="javascript:history.go(-1);"><i class="fa fa-angle-left fa-2x"></i></a></span>
+				<span>发布招标采购信息</span>
+				 <span><a href="index.html"><i class="fa fa-home fa-2x"></i></a></span>
+			</div>
+			<div class="home-top">
+				<div class="main">
+					<div class="main-h">
+						<p>请完善以下信息</p>
+					</div>
+					<div class="main-text">
+						<span>标题</span>
+						<input type="text" placeholder="请输入标题">
+					</div>
+					<div class="main-text">
+						<span>行业分类</span>
+						<input type="text" placeholder="请选择分类">
+					</div>
+					<div class="main-text">
+						<span>地区</span>
+						<input type="text" placeholder="请选择地区">
+					</div>
+					
+					<div class="main-text">
+						<span>项目阶段</span>
+						<input type="text" placeholder="请选择项目阶段" list="itemlist" ></div>
+						<datalist id="itemlist">
+						    <option>公告</option>
+						    <option>预告</option>
+						    <option>中标</option>
+						    <option>变更</option>
+						    <option>在建项目</option>
+						</datalist> 
+					<div class="main-text main-dis">
+						<span>详情</span>
+						<textarea name="con" id="weibo" cols="30" rows="20" placeholder="请输入招标项目详情"></textarea>
+					</div>
+					<div class="main-texts">您还可以输入500个字,现在剩余500个</div>
+					<div class="go">
+						<button>提交</button>
+					</div>
+				</div>
+			</div>
+			<div class="home-botton">
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="./images/db1.png" />
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="RecruitWorkers.html">
+							<img src="./images/db2.png" />
+							<p>招工信息</p>
+						</a>
+					</li>
+					<li id="button">
+						<a onclick="disno()">
+							<img src="./images/db3.png" />
+							<p>发布</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueRecruitWorkers.html">
+							<img src="./images/db4.png" />
+							<p>工人找活</p>
+						</a>
+					</li>
+					<li>
+						<a href="MemberCenter.html">
+							<img src="./images/db5.png" />
+							<p>会员</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="in">
+					<div class="in-top"></div>
+					<div class="in-list">
+						<ul class="list">
+							<li>
+								<a href="IssueRecruitWorkers.html">
+									<img src="./images/button1.png"/>
+									<p>发布招工</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueJob.html">
+									<img  src="images/button2.png"/>
+									<p>发布找活</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachineryRent.html">
+									<img  src="images/button3.png"/>
+									<p>机械求租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachinery.html">
+									<img src="images/button4.png"/>
+									<p>机械出租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueBiddingAndPurchase.html">
+									<img src="images/button3.png"/>
+									<p>招标采购</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="in-botton">
+							<button  onclick="dis()"></button>
+					</div>
+				</div>
+			
+			<script type="text/javascript" src="attempt.js/xx.js"></script>
+		
+	</body>
+</html>

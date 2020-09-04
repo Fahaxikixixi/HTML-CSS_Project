@@ -1,0 +1,341 @@
+ .imgstyle {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .box {
+     position: absolute;
+     width: 376px;
+     height: 322px;
+     top: 75px;
+     right: 129px;
+ }
+ 
+ .box ul {
+     background-color: #ffffff;
+ }
+ 
+ .lipos {
+     position: relative;
+ }
+ 
+ .box li {
+     width: 100%;
+     height: 100%;
+     line-height: 64px;
+     text-align: center;
+     margin: 0 auto;
+     overflow: hidden;
+ }
+ 
+ .textstyle {
+     height: 62px;
+     /* font-weight: 400; */
+     font-size: 22px;
+     border-bottom: #dcdcdc solid 1px;
+ }
+ 
+ .inp,
+ .login {
+     width: 286px;
+     margin: 0 auto;
+     border-radius: 5px;
+     vertical-align: middle;
+     display: table-cell;
+     margin-top: 30px;
+ }
+ 
+ .inp {
+     height: 33px;
+     border: #dcdcdc solid 1px;
+     background-color: #ffffff;
+     padding-left: 8px;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+ }
+ 
+ .box .paw {
+     position: absolute;
+     right: 55px;
+     top: 36px;
+     /* transform: translate(34%, 148%); */
+ }
+ 
+ .login {
+     height: 34px;
+     line-height: 4px;
+     background-color: #de3612;
+     border: none;
+     color: #ffffff;
+     letter-spacing: 20px;
+ }
+ 
+ .fl {
+     float: left;
+     margin-left: 44px;
+ }
+ 
+ .fr {
+     float: right;
+     margin-right: 44px;
+ }
+ 
+ .fl span,
+ .fl a,
+ .fr a {
+     color: #de3612;
+     font-size: 14px;
+ }
+ 
+ .clear {
+     clear: both;
+     zoom: 1;
+ }
+ 
+ .clear::after {
+     content: '';
+     clear: both;
+     display: block;
+ }
+ /* .textcolor {
+     line-height: 18px !important;
+ }
+  */
+ 
+ .textcolor a {
+     color: #de3612;
+     font-size: 14px;
+ }
+ 
+ .spanstyle {
+     margin: 0 15px;
+     color: #de3612;
+ }
+ /*短信登录css*/
+ 
+ .mesagebox {
+     position: absolute;
+     height: 500px;
+     width: 376px;
+     top: 45px;
+     right: 129px;
+     background-color: #ffffff;
+ }
+ 
+ .mesagebox li {
+     position: relative;
+     height: 100%;
+     text-align: center;
+     margin: 0 auto;
+     overflow: hidden;
+ }
+ 
+ .boxhei {
+     height: 50px !important;
+     line-height: 50px;
+     border-bottom: #dcdcdc solid 1px;
+     font-size: 22px;
+ }
+ 
+ .black {
+     position: absolute;
+     left: 12px;
+     top: 17px;
+     width: 26px;
+     height: 20px;
+     /* transform: rotateY(180deg); */
+ }
+ 
+ .imgpt {
+     position: absolute;
+     left: 55px;
+     top: 163px;
+ }
+ 
+ .strip {
+     position: relative;
+     height: 15px;
+     background-color: #e7e6e6;
+     margin: 0 44px;
+     border-radius: 10px;
+     margin-top: 5px;
+ }
+ 
+ .block {
+     display: inline-block;
+     position: absolute;
+     height: 22px;
+     width: 40px;
+     left: 5px;
+     top: -4px;
+     line-height: 20px;
+     background-color: #a8a9ad;
+     color: #ffffff;
+     border-radius: 10px;
+ }
+ 
+ .inpt {
+     width: 121px;
+     margin: 0 auto;
+     border-radius: 5px;
+     vertical-align: middle;
+     display: table-cell;
+     margin-top: 30px;
+     margin-left: 44px;
+     height: 33px;
+     border: #dcdcdc solid 1px;
+     background-color: #ffffff;
+     letter-spacing: 1px;
+     text-indent: 5px;
+     color: #fa6f51;
+ }
+ 
+ .inptfl {
+     float: left;
+ }
+ 
+ .inptfr {
+     float: right;
+ }
+ 
+ .textcolors {
+     line-height: 36px !important;
+ }
+ 
+ .textcolors a {
+     color: #de3612;
+     font-size: 14px;
+ }
+ /*注册*/
+ 
+ .header p {
+     min-width: 960px;
+     height: 70px;
+     line-height: 70px;
+     text-indent: 135px;
+     font-size: 25px;
+ }
+ 
+ .disblock {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     line-height: 22px;
+     text-align: center;
+     color: #dcdcdc;
+     border-radius: 10px;
+     border: #dcdcdc solid 1px;
+     font-size: 14px;
+     margin: 0 5px;
+ }
+ 
+ .summary {
+     min-width: 960px;
+     height: 60px;
+     margin: 0 auto;
+     text-align: center;
+ }
+ 
+ .line {
+     display: inline-block;
+     height: 1px;
+     line-height: 1px;
+     width: 300px;
+     background-color: #dcdcdc;
+     margin-bottom: 5px;
+ }
+ 
+ .textcolorx {
+     color: #ffffff;
+     background-color: brown;
+ }
+ 
+ .content {
+     width: 410px;
+     margin: 0 auto;
+     padding-bottom: 100px;
+ }
+ 
+ .content li {
+     height: 100%;
+     text-align: center;
+     line-height: 34px;
+     margin: 0 auto;
+     font-size: 15px;
+ }
+ 
+ .imgpos {
+     position: absolute;
+     right: 61px;
+     top: 6px;
+ }
+ 
+ .inps {
+     height: 33px;
+     width: 270px;
+     border: #dcdcdc solid 1px;
+     background-color: #ffffff;
+     padding-left: 8px;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     margin-left: 10px;
+     color: #bbbbbb;
+ }
+ 
+ .col {
+     color: #de3612;
+     font-size: 14px;
+ }
+ 
+ .imgpts {
+     position: absolute;
+     left: 90px;
+     top: 38px;
+ }
+ 
+ .striptwo {
+     position: relative;
+     height: 15px;
+     background-color: #e7e6e6;
+     margin: 0 60px;
+     border-radius: 10px;
+     margin-top: 5px;
+ }
+ 
+ .inpts {
+     width: 121px;
+     margin: 0 auto;
+     border-radius: 5px;
+     vertical-align: middle;
+     display: table-cell;
+     margin-top: 10px;
+     margin-left: 10px;
+     height: 33px;
+     border: #dcdcdc solid 1px;
+     background-color: #ffffff;
+     letter-spacing: 1px;
+     text-indent: 5px;
+     color: #fa6f51;
+ }
+ 
+ .loginco {
+     letter-spacing: 2px;
+ }
+ 
+ .logins {
+     width: 286px;
+     height: 34px;
+     margin: 0 auto;
+     border-radius: 5px;
+     vertical-align: middle;
+     display: table-cell;
+     margin-top: 30px;
+     line-height: 4px;
+     background-color: #ffffff;
+     border: none;
+     color: #999999;
+     border: #999999 solid 1px;
+     letter-spacing: 2px;
+ }

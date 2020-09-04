@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #a {
+            width: 200px;
+            background-color: burlywood;
+            height: 100px;
+            position: relative;
+            border-radius: 100px;
+        }
+        
+        #b {
+            background-color: chartreuse;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            border-radius: 100px;
+        }
+        
+        li {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            list-style-type: none;
+        }
+        
+        .imgplay {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        #imgbox {
+            display: flex;
+        }
+        
+        img {
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a" class="aa">
+        <div id="b"></div>
+    </div>
+
+    <input id="ss" type="checkbox">
+    <ul id="sss" class="sss">
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+    </ul>
+    <div class="imgplay">
+        <div id="imgbox">
+            <img src="./img/i/1.jpg" alt="">
+            <img src="./img/i/2.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        //按钮点击
+        var b = document.getElementById('b');
+        var a = document.getElementById('a');
+        a.onclick = function() {
+                if (a.className == 'aa') {
+                    a.className = 'bb';
+                    b.style.left = '100px'
+                    a.style.background = '#000';
+
+                } else {
+                    b.style.left = '0px';
+                    b.style.background = 'chartreuse';
+                    a.className = 'aa';
+                    a.style.background = 'burlywood';
+
+                }
+            }
+            //复选框点击
+        var inp = document.getElementById('sss').getElementsByTagName('input');
+        var inps = document.getElementById('ss');
+
+        console.log(inps);
+        //点击最上面（选中或取消选中）的下面四个全选中/全不选中
+        inps.onclick = function() {
+                for (var i = 0; i < inp.length; i++) {
+                    console.log(inp[0].checked)
+                    inp[i].checked = this.checked;
+                }
+            }
+            //下面四个全选中时，最上面的也选中
+        for (var i = 0; i < inp.length; i++) {
+            inp[i].onclick = function() {
+                var flag = true;
+                for (var i = 0; i < inp.length; i++) {
+
+                    if (!inp[i].checked) {
+                        flag = false;
+                    }
+                }
+                inps.checked = flag;
+            }
+        }
+
+        //轮播图
+        //定时器
+        var time = setInterval(playimg, 1000);
+
+        function playimg() {
+            var imgs = document.getElementById('imgbox').getElementsByTagName('img');
+            var imgcope = '';
+
+            imgs[0].style.marginLeft = '-' + 200 + 'px';
+
+        }
+    </script>
+</body>
+
+</html>

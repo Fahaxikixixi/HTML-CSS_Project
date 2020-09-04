@@ -1,0 +1,93 @@
+@charset "utf-8";
+body{
+    transition: all .3s;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    font-family:arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html,body{height: 100%;}
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+form,ul,ol,li,input{padding:0;}
+img{border:0px;}
+ul,ol,li{
+    list-style:none;
+    margin:0;
+}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+input{
+    display: block;
+    outline: none;
+    margin-bottom: 30px;
+}
+.li{
+	  list-style: none; 
+}
+div,p,h1,h2,h3,h4,b,form,input,textarea,ul,ol,li,a,dd,dt,dl,i,em,pre { 
+    list-style:none; 
+    text-decoration:none;
+    font-family:"Microsoft YaHei",tahoma,Arial,"微软雅黑",Helvetica,sans-serif; 
+    margin:0;
+    padding: 0;
+}
+/* 清空浮动的代码-start */
+.clr {display: block;}
+.clr:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+/* 字体超出隐藏 */
+.a_hidden{
+    display:block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+input[type=button], input[type=submit], input[type=file], button { 
+    cursor: pointer ; 
+   -webkit-appearance: none ;
+}
+
+.pictrue-y {
+    width: 100%;
+    display: block;
+}
+.pictrue-x {
+    height: 100%;
+    display: block;
+}
+.transform-x {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.transform-y {
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.border-top {
+    border-top: .01rem solid #ccc;
+}
+.show{display: block !important;}
+.hide{display: none !important;}

@@ -1,0 +1,70 @@
+`
+<li>
+  <a href="./user-home.html?userId=${item.user.id}">
+    <img src="${item.supportUser[i].headImageUrl}" width="100%" alt="">
+  </a>
+</li>`
+    }
+    // 帖子列表数据渲染,项帖子都保存发帖用户的id(user-id)和当前帖子id(post-id)
+    invitationHTML +=
+        `<li post-id="${item.id}" uesr-id="${item.user.id}">
+  <div class="cont-header">
+    <div class="cont-header-wrap">
+      <a href="./user-home.html?userId=${item.user.id}"><img class="user_tx" src="${item.user.headImageUrl}" alt=""></a>
+      <div>
+        <p class="user_name">${item.user.nickname}</p>
+        <div class="age">
+          <span class="user_age">${item.user.age}岁</span>
+          <img src="./img/${item.user.sex == '男' ? 'man.png' : 'woman.png'}" class="sex_icon"></img>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="attention-box clear">
+        <div class="handle fr">‧‧‧</div>
+        <div class="attention">
+          <a class="follow" href="javascript:;">${item.user.follow ? '取消关注' : '关注'}</a><a href="tel:${item.user.phoneNumber}">电话</a>
+        </div>
+      </div>
+      <div class="handle_wrap">
+        <p class="time_info">
+          <span>${item.createDay}</span>
+          <span>${item.createHour}</span>
+          <span>${item.distance}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="cont-box">
+    <p class="content-text">
+      ${item.content}
+    </p>
+    <div class="img-box" style="display:${item.albums.length > 0 ? 'flex' : 'none'}">
+    ${imgList}
+    </div>
+    <p class="site" style="display:${item.showAddress ? 'block' : 'none'}">${item.address}</p>
+    <div class="interflow">
+      <div class="good-box">
+        <a class="clickgood">
+          <img src="./img/${item.isSupported ? 'good_active.png' : 'good.png'}"><span>${item.supportCount}</span>
+        </a>
+        <a class="views">
+          <img src="./img/眼睛.png">
+          <span>${item.viewCount}</span>
+        </a>
+      </div>
+      <div class="views-peoples">
+        <ul class="good-list">
+          ${goodList}
+          <li style="display:${item.supportUser.length == 0 ? 'none' : 'block'}">
+            <a href="./good-list.html"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="toshare">
+        <a href="./share.html" class="share"></a>
+        <a class="to-top" style="display: ${item.canHeadlines ? 'inline' : 'none'}"></a>
+      </div>
+    </div>
+  </div>
+</li>`

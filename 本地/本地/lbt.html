@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>轮播</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #box {
+            width: 790px;
+            height: 340px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .btn {
+            width: 50px;
+            height: 100px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.2);
+            font-size: 40px;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            top: 120px;
+            display: none;
+        }
+        
+        #left {
+            left: 0px;
+        }
+        
+        #right {
+            right: 0px;
+        }
+        
+        ul {
+            list-style: none;
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        ul li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            background-color: #aaa;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+        }
+        
+        .ss {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <img id="pic" src="./img/i/1.jpg" />
+        <ul id="list">
+            <li class="s">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+        <div class="btn" id="left"> &lt;</div>
+        <div class="btn" id="right">&gt;</div>
+    </div>
+
+
+    <script>
+        window.onload = function() {
+            var box = document.getElementById("box");
+            var ul = document.getElementById("list");
+            var img = document.getElementById("pic");
+            var left_btn = document.getElementById("left");
+            var right_btn = document.getElementById("right");
+            var allLi = document.getElementsByTagName("li");
+            //第一步 ：第一个按钮设置为红色
+            var currentNUM = 1;
+            allLi[0].style.backgroundColor = "red";
+            //第二步：让图片循环改变
+            var timer = setInterval(startloop, 2000);
+
+            function startloop() {
+                currentNUM++
+                changeIMG()
+            }
+
+            function changeIMG(s) {
+                if (currentNUM == 0) {
+                    currentNUM = 8;
+                }
+                if (currentNUM == 9) {
+                    currentNUM = 1;
+                }
+                img.src = "img/i/" + currentNUM + ".jpg";
+
+                //清空小圆点颜色，改变下一个颜色		
+                for (var i = 0; i < allLi.length; i++) {
+                    allLi[i].style.backgroundColor = "#aaa";
+                }
+                allLi[currentNUM - 1].style.backgroundColor = "red"; //设置当前的颜色的
+            };
+
+
+            //第三步：鼠标进入box和离开
+            box.addEventListener("mouseover", function() {
+                //左右显示出来
+                left_btn.style.display = "block";
+                right_btn.style.display = "block";
+                window.clearInterval(timer);
+            }, false);
+            box.addEventListener("mouseout", function() {
+                left_btn.style.display = "none";
+                right_btn.style.display = "none";
+                timer = setInterval(startloop, 2000);
+            }, false);
+
+            //第四步： 点击左右按钮
+            left_btn.addEventListener("mouseover", deep, false);
+            left_btn.addEventListener("mouseout", nodeep, false);
+            right_btn.addEventListener("mouseover", deep, false);
+            right_btn.addEventListener("mouseout", nodeep, false);
+            left_btn.addEventListener("click", function() {
+                currentNUM--;
+                changeIMG();
+            }, false);
+            right_btn.addEventListener("click", startloop, false);
+
+            function deep() {
+                this.style.backgroundColor = "rgba(0,0,0,0.4)";
+            };
+
+            function nodeep() {
+                this.style.backgroundColor = "rgba(0,0,0,0.2)";
+            };
+            //第五步：小圆点的转换
+            for (var i = 0; i < allLi.length; i++) {
+                allLi[i].index = i + 1;
+                allLi[i].addEventListener("mouseover", function() {
+                    allLi[0].style.backgroundColor = "#aaa"
+                    currentNUM = this.index;
+                    console.log(currentNUM)
+                    changeIMG();
+                }, false);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

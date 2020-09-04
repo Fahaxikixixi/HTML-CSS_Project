@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/CollectionRecruitment.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />		<script src="attempt.js/pixel.js"></script>
+		
+		<script src="attempt.js/pixel.js"></script>
+		<title>实名认证</title>
+		<style>
+			.home-top{
+				background-color: #FFFFFF;
+			}
+			.main{
+				display: flex;
+				flex-direction: column;	
+			}
+			.main-text{
+				display: flex;
+				margin: .4rem .1rem;
+			}
+			.main-text span{
+				width: 1.3rem;
+				height: .4rem;
+				font-size: .28rem;
+				text-align-last: justify;
+				color: #000000;
+				font-weight: bold;
+				margin-left: .15rem;
+			}
+			.main-text input{
+				border: none;
+				background-color: #FFFFFF;
+				font-size: .26rem;
+				padding-left: .6rem;
+				letter-spacing: .05rem;
+			}
+			.main-textx{
+				padding-left: .15rem;
+				line-height: .5rem;
+			}
+			.main-textx span:nth-child(1){
+				background-color: red;
+				color: #FFFFFF;
+				font-size: .24rem;
+				border-radius: .05rem;
+				text-align: center;
+				padding: .1rem .15rem;
+				margin-left: .1rem;
+			}
+			.main-textx span:nth-child(2){
+				font-size: .28rem;
+				color: #666;
+				letter-spacing: .03rem;
+			}
+			.main-textxx{
+				display: flex;
+				align-items: center;
+				text-align: center;
+				margin: .2rem auto 0 auto;
+				padding-bottom: .4rem;
+				width: 100%;
+				border-bottom:.02rem solid #DCDCDC;
+			}
+			.main-textxx-left{
+				width: 50%;	
+			}
+			.main-textxx-right{
+				width: 50%;	
+			}
+			.main-textxx p{
+				color: #666;
+				font-size: .3rem;
+				padding-top: .15rem;
+			}
+			.main-textxx img{
+				width: 100%;
+				height: 2.5rem;
+			}
+			.go{
+				width: 100%;
+				margin: .2rem auto;
+				text-align: center;
+			}
+			.go input{
+				border: none;
+				color: #FFFFFF;
+				background: linear-gradient(0deg,#1E99FF 0%,#1C56F9 100%);
+				font-size: .3rem;
+				height: .8rem;
+				border-radius: .1rem;
+				width: 60%;
+				margin: 0 auto;
+			}
+			.inpt{
+				border: none;
+				position: absolute;
+				bottom: 2.6rem;
+				width: 4rem;
+				height: 3.1rem;
+				outline: none;
+				 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+			:focus{
+					outline:0;	
+			}  	
+			
+		</style>
+	</head>
+	<body>
+		<div class="home">
+			<div class="Top">
+				<span><a href="javascript:history.go(-1);" onClick="javascript:history.go(-1);"><i class="fa fa-angle-left fa-2x"></i></a></span>
+				<span>实名认证</span>
+				<span><a href="index.html"><i class="fa fa-home fa-2x"></i></a></span>
+			</div>
+			<div class="home-top">
+				<div class="main">
+					<div class="main-text">
+						<span>姓名</span>
+						<input type="text" placeholder="请填写姓名">
+					</div>
+					<div class="main-text">
+						<span>年龄</span>
+						<input type="text" placeholder="请填写年龄">
+					</div>
+					<div class="main-text">
+						<span>民族</span>	
+						<input type="text" placeholder="请填写名族">
+					</div>
+					<div class="main-text">
+						<span>身份证号</span>
+						<input type="text" placeholder="请填写身份证号">
+					</div>
+					<div class="main-textx">
+						<p>
+							<span>重要</span>
+							<span>上传前,请按照示范拍好两张照片,一张单独的身份证正面照(可遮掉身份证后四位),一张真人头像同身份证的合影照片</span>
+						</p>
+					</div>
+					<div class="main-textxx">
+						<div class="main-textxx-left">
+							<img src="./images/sfz1.png" />
+							<input type="file"  class="inpt" style="opacity: 0;"/>
+							<p>请上传身份证正面</p>
+						</div>
+						<div class="main-textxx-right">
+							<img src="./images/sfz2.png" />
+							<input type="file"  class="inpt" style="opacity: 0;"/>
+							<p>请上传身份证反面</p>
+						</div>
+					</div>
+					<div class="go">
+						<input type="submit" value="提交审核">
+					</div>
+				</div>
+			</div>
+			<div class="home-botton">
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="./images/db1.png" />
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="RecruitWorkers.html">
+							<img src="./images/db2.png" />
+							<p>招工信息</p>
+						</a>
+					</li>
+					<li id="button">
+						<a onclick="disno()">
+							<img src="./images/db3.png" />
+							<p>发布</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueRecruitWorkers.html">
+							<img src="./images/db4.png" />
+							<p>工人找活</p>
+						</a>
+					</li>
+					<li>
+						<a href="MemberCenter.html">
+							<img src="./images/db5.png" />
+							<p>会员</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+				<div class="in">
+					<div class="in-top"></div>
+					<div class="in-list">
+						<ul class="list">
+							<li>
+								<a href="IssueRecruitWorkers.html">
+									<img src="./images/button1.png"/>
+									<p>发布招工</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueJob.html">
+									<img  src="images/button2.png"/>
+									<p>发布找活</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachineryRent.html">
+									<img  src="images/button3.png"/>
+									<p>机械求租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachinery.html">
+									<img src="images/button4.png"/>
+									<p>机械出租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueBiddingAndPurchase.html">
+									<img src="images/button3.png"/>
+									<p>招标采购</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="in-botton">
+							<button  onclick="dis()"></button>
+					</div>
+				</div>
+			
+			<script type="text/javascript" src="attempt.js/xx.js"></script>
+	</body>
+</html>

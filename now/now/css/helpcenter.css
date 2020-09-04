@@ -1,0 +1,204 @@
+    body {
+        width: 100%;
+    }
+    
+    .head {
+        position: relative;
+        left: 0;
+        right: 0;
+        height: 66px;
+    }
+    
+    .head .imgstyles {
+        width: 100%;
+        height: 66px;
+    }
+    
+    .head p {
+        position: absolute;
+        top: 0;
+        font-size: 24px;
+        line-height: 66px;
+        margin-left: 60px;
+    }
+    
+    .head input {
+        position: absolute;
+        width: 300px;
+        height: 30px;
+        right: 176px;
+        top: 18px;
+        line-height: 30px;
+        border-radius: 6px;
+        border: none;
+        text-indent: 12px;
+        color: #666666;
+        font-size: 14px;
+        /*IE8 让border-radius   属性生效兼容*/
+        behavior: url('./js/PIE.htc');
+    }
+    
+    .head .imgstyle {
+        position: absolute;
+        width: 24px;
+        right: 180px;
+        top: 23px;
+    }
+    
+    .content {
+        clear: both;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .content-left {
+        position: absolute;
+    }
+    
+    .content-left-toptext {
+        background-color: #7d858a;
+        color: #fff;
+        padding-left: 24px;
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+    
+    .content-left-toptext img {
+        width: 24px;
+        height: 15px;
+        vertical-align: middle;
+        /* transform: translate(24%, 28%); */
+    }
+    
+    .content-left-list {
+        width: 183px;
+        text-align: center;
+        border-right: #dcdcdc solid 1px;
+        border-bottom: #dcdcdc solid 1px;
+        background-color: #efefef;
+    }
+    
+    .content-right {
+        /* float: left; */
+        /* width: 100%; */
+        margin-left: 224px;
+        margin-right: 148px;
+    }
+    
+    .content-left-list li,
+    .content-left-toptext,
+    .text,
+    .content-right-list {
+        height: 60px;
+        line-height: 60px;
+        text-align: left;
+        font-size: 15px;
+    }
+    
+    .content-left-list li {
+        border-bottom: #e5e5e5 solid 1px;
+        margin-left: 24px;
+    }
+    
+    .content-left-list li a {
+        color: #666666;
+    }
+    
+    .text {
+        padding-right: 18px;
+        margin-left: 24px;
+        color: #666666;
+    }
+    
+    .text img {
+        width: 18px;
+        height: 21px;
+        /* vertical-align: middle; */
+        transform: translate(212%, 32%);
+    }
+    
+    .content-right-list {
+        /* display: flex; */
+        clear: both;
+        zoom: 1;
+        min-width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: #efefef;
+        margin-right: 140px;
+        color: #666666;
+        font-size: 15px;
+        padding-left: 12px;
+    }
+    
+    .content-right-list::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    
+    .content-right-text {
+        height: 78px;
+        line-height: 78px;
+        text-align: left;
+        font-size: 15px;
+        color: #999999;
+    }
+    
+    .content-right-list li {
+        float: left;
+        min-width: 20%;
+        color: #666666;
+    }
+    
+    .content-right-list li a {
+        color: #666666;
+    }
+    
+    .number {
+        text-align: right;
+        margin-top: 130px;
+    }
+    
+    .border,
+    .number input {
+        /* float: left; */
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 6px;
+        -ms-border-radius: 6px;
+        border: #dddddd solid 1px;
+        margin: 0 6px;
+        font-size: 15px;
+        color: #666666;
+        /*IE8 让border-radius   属性生效兼容*/
+        behavior: url('./js/PIE.htc');
+    }
+    
+    .borders {
+        background-color: #2db7f5;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    
+    .number input {
+        background-color: #ffff !important;
+    }
+    
+    .textstyle {
+        font-size: 15px;
+        color: #999999;
+    }
+    
+    .number a {
+        display: inline-block;
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+        color: #69c0f5 !important;
+    }

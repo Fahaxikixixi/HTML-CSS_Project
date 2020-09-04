@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/dajiahaopublic.css">
+    <link rel="stylesheet" href="./css/release_text.css">
+    <script src="./js/kindeditor/kindeditor-all.js"></script>
+    <script src="./js/kindeditor/lang/zh-CN.js"></script>
+    <!-- <script src="./js/PIE.js"></script> -->
+
+    <style>
+
+    </style>
+    <title>发布文章</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="headercenter">
+            <div class="headerleft">
+                <a href=""><img src="./img/left_03.png" alt=""></a>
+                <a href="">大家号</a>
+            </div>
+            <div class="headerright">
+                <a class="addpadding" href="#"><img src="./img/icon_36.png"></a>
+
+                <a class="addborder" href="#"><img class="add" src="./img/21.png" alt=""><span>萌兜可爱点</span></a>
+
+
+                <a class="addpadding" href="#">退出</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-wrap clear">
+        <div class="content-wrap fl">
+            <div class="contents">
+
+                <div class="content-right">
+
+
+                    <div class="change">
+                        <p class="info">您是初级作者，每天可发布1条作品信息，他们都在使用<a href="#">发布套餐</a>提升曝光效果，<a href="#">点击查看</a>!
+                        </p>
+                        <div class="txt_b"><input type="text" maxlength="30" placeholder="请输入标题(8-30字)"><span class="txt_num"><span>0</span>/30</span>
+                        </div>
+                        <textarea id="myKindEditor" name="tcontent"></textarea>
+                        <select name="" id="">
+                            <option value="">选择文章大类</option>
+                            <option value="">大</option>
+                            <option value="">大</option>
+                            <option value="">大</option>
+                            <option value="">大</option>
+                            <option value="">大</option>
+                            
+                        </select>
+                        <select name="" id="">
+                            <option value="">选择文章小类</option>
+                            <option value="">小</option>
+                            <option value="">小</option>
+                            <option value="">小</option>
+                            <option value="">小</option>
+                        </select>
+                        <p class="clear chkbox"><span class="text_font fl">文章封面：自动</span><input class="fl" type="checkbox" name="" id=""></p>
+                        <div class="text_font imgbox">手动：<span><img src="./img/icon_13.png" alt=""></span><input class="fileimgbtn" type="file" accept=".jpg,image/jpeg" accept=".png,image/png" name="" id=""></div>
+                        <p class="textcol text_font">*付费推广</p>
+                        <div class="clear"> <span class="textcol block text_font">1.上推荐<a href="#">(选择套餐)</a><input type="checkbox" name="" id=""></span>
+                            <span class="textcol block text_font">2.上热点<a href="#">(选择套餐)</a><input type="checkbox" name="" id=""></span>
+                            <span class="textcol block text_font">3.开通打赏<a href="#">(开通打赏)</a><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="btn_box clear"><input class="turebtn" type="button" value="提交发布"><input class="keepbtn" type="button" value="存为草稿"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside fl">
+            <div class="content_list">
+                <ul>
+                    <li><img src="./img/icon_32.png" alt="">
+                        <a class="distance" href="./dajiahao.html">首页</a></li>
+                    <li><img src="./img/icon_25.png" alt="">
+                        <a class="distance textcolor" href="./release_text.html">发布文章</a></li>
+                    <li><img src="./img/icon_26.png" alt="">
+                        <a class="distance" href="./content.html">内容管理</a></li>
+                    <li><img src="./img/icon_34.png" alt="">
+                        <a class="distance" href="">增值服务</a></li>
+                    <li><img src="./img/icon_35.png" alt="">
+                        <a class="distance" href="">上今日榜</a></li>
+                    <li><img src="./img/icon_33.png" alt="">
+                        <a class="distance" href="">发布套餐</a></li>
+                    <li><img src="./img/icon_24.png" alt="">
+                        <a class="distance" href="./again.html">刷新</a></li>
+                    <li><img src="./img/icon_29.png" alt="">
+                        <a class="distance" href="">打赏管理</a></li>
+                    <li><img src="./img/icon_30.png" alt="">
+                        <a class="distance" href="">财务管理</a></li>
+                    <li><img src="./img/icon_31.png" alt="">
+                        <a class="distance" href="./personaldata.html">个人资料设置</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <a href="#">关于我们</a>
+        <a href="#">招贤纳士</a>
+        <a href="#">联系我们  </a>
+    </div>
+</body>
+<script>
+    var editor;
+    KindEditor.ready(function(K) {
+        editor = K.create('#myKindEditor', {
+            width: '950px',
+            height: '220px',
+            resizeType: '0'
+        });
+        editor.html("");
+    });
+</script>
+
+</html>

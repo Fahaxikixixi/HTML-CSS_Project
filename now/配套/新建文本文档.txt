@@ -1,0 +1,40 @@
+todaylist	今日上榜
+
+Reward		打赏管理 -开通打赏
+
+Reward_txjl	打赏管理-提现记录
+
+Reward_dstx	打赏管理-打赏提现
+
+Reward_dsmx	打赏管理-打赏明细
+
+release		发布套餐
+
+personaldata	个人资料
+
+increment	增值服务
+
+increment-again  增值服务-刷新
+
+increment-stj	增值服务-上推荐
+
+increment-srd	增值服务-上热点
+
+helpcenter-details	帮助中心
+
+helpcenter	帮助
+
+financialmanagement	财务管理
+
+dajiahao_activity  首页活动详情
+
+dajiahao_gg	   首页—公告
+dajiahao_tz	 首页—通知
+dajiahao	大家号
+
+Content		内容管理-已发布
+
+again		刷新
+
+again_pay	刷新-支付
+

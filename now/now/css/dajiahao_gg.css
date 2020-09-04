@@ -1,0 +1,77 @@
+.content-right {
+    min-height: 1200px;
+}
+
+.change ul {
+    margin-right: 130px;
+}
+
+.change ul li {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.change li a {
+    color: #555555;
+}
+
+.textwei {
+    font-size: 25px !important;
+    font-weight: 550;
+    padding-top: 30px;
+    border-bottom: #a9bfc6 solid 1px;
+    ;
+    padding-bottom: 10px;
+}
+
+.number {
+    text-align: left;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.change li a span {
+    letter-spacing: 2px;
+}
+
+.border,
+.number input {
+    /* float: left; */
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    border: #dddddd solid 1px;
+    margin: 0 6px;
+    font-size: 15px;
+    color: #666666;
+    /*IE8 让border-radius   属性生效兼容*/
+    behavior: url('./js/PIE.htc');
+}
+
+.borders {
+    background-color: #e5e5e5;
+    color: #666666;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.number input {
+    background-color: #ffff !important;
+}
+
+.textstyle {
+    font-size: 14px;
+    color: #999999;
+}
+
+.number a {
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666666 !important;
+}

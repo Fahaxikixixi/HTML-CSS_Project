@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 清除浮动 */
+        
+        .clear {
+            zoom: 1;
+        }
+        
+        .clear::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .fl {
+            float: left;
+        }
+        
+        #header,
+        #footer {
+            width: 100%;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            background: black;
+        }
+        
+        .container-wrap {
+            width: 100%;
+        }
+        
+        .aside {
+            width: 200px;
+            background: red;
+            height: 100vh;
+            margin-left: -100%;
+        }
+        
+        .content-wrap {
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .contents {
+            background: pink;
+            height: 100%;
+            margin-left: 200px;
+        }
+        
+        .s {
+            background-color: saddlebrown;
+            height: 200px;
+        }
+        
+        .ss {
+            background-color: seagreen;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">头部</div>
+    <div class="container-wrap clear">
+        <div class="content-wrap fl">
+            <div class="contents">
+
+            </div>
+        </div>
+        <div class="aside fl">侧边栏</div>
+    </div>
+    <div id="footer">底部</div>
+</body>
+
+</html>

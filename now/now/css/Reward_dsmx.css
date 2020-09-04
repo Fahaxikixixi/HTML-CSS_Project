@@ -1,0 +1,56 @@
+/* .aside {
+    border-right: #a9bfc6 solid 1px;
+} */
+
+.textstyletwo {
+    color: #333333;
+    font-size: 15px;
+}
+
+.textweight {
+    font-weight: bold;
+    color: #333333;
+}
+
+.inblock {
+    margin-bottom: 30px;
+    min-width: 960px;
+}
+
+.inblock span {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 57px;
+}
+
+.change {
+    height: 100%;
+    min-height: 520px;
+}
+
+table tr {
+    height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: #666666;
+    margin: 0;
+}
+
+thead th {
+    width: 200px;
+    background-color: #2789bb;
+    color: #ffffff;
+    border: #2a7da7 solid 2px;
+}
+
+td {
+    border: #f6f6f6 solid 2px;
+}
+
+.tdcolor {
+    color: #2789bb;
+}
+
+.tdpadding {
+    padding-right: 20px;
+}

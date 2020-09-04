@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/CollectionRecruitment.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<script src="attempt.js/pixel.js"></script>
+		<title>公告详情</title>
+		<style>
+			.home{
+				background-color: #FFFFFF;
+			}
+			.home-top-header{
+				margin: .4rem .4rem 0 .4rem;
+				border-bottom: .01rem solid #dcdcdc;
+				padding-bottom: .2rem;
+			}
+			.home-top-header p:nth-child(2){
+				color: #8f8f94;
+				padding-top: .3rem;
+				font-size: .26rem;
+			}
+			.home-top-header p span{
+				color: #8f8f94;
+				float: right;
+			}
+			.home-top-header p{
+				color: #353636;
+			}
+			.home-top-next p{
+				margin-top: .2rem;
+				font-size: .28rem;
+				line-height: .4rem;
+			}
+			p{
+				color: #8f8f94;
+			}
+			.main{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-h{							
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: .5rem;
+				border-bottom:.01rem solid #CECDD1 ;
+				padding-bottom: .3rem;
+			}
+			.main-h h1{
+				color: #3185E6;
+				font-size: .34rem;
+				font-weight: bold;
+			}
+			.main-text{
+				display: flex;
+				margin: .475rem .1rem;
+			}
+			.main-text span{
+				width: 1.55rem;
+				height: .4rem;
+				font-size: .33rem;
+				text-align-last: justify;
+				color: #000000;
+				font-weight: bold;
+				margin-left: .15rem;
+			}
+			.main-text input{
+				border: none;
+				background-color: #efeff4;
+				font-size: .33rem;
+				padding-left: 1.2rem;
+			}
+			.main-dis{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-text textarea{
+				border: none;
+				background-color: #efeff4;
+				outline: none;
+				width: 80%;
+				height: 2.2rem;
+				margin-top:.2rem ;
+				margin-left: .4rem;
+				font-size: .34rem;
+			}
+			.main-texts{
+				color: #666;
+				text-align: right;
+				font-size: .31rem;
+			}
+			.go{
+				width: 100%;
+				text-align: center;
+			}
+			.go button{
+				border: none;
+				color: #FFFFFF;
+				height: .75rem;
+				width: 50%;
+				font-size: .3rem;
+				border-radius: .12rem;
+				background: linear-gradient(0deg, #1e9aff, #1c54f9);
+				margin-top:.18rem ;
+				outline：none;
+			}
+			:focus{
+				outline:0;
+			}
+			.last{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.last-first{				
+				margin:.2rem auto .1rem auto;
+				text-align: center;
+				padding-bottom: .2rem;
+				width: 100%;
+				border-bottom: .01rem dashed #069BFF;				
+			}
+			.last-first .fo{
+				color: #666;
+				font-size:.32rem ;
+			}
+			.last-first i{
+				color: #1c54f9;
+				font-size: .33rem;
+			}
+			.last-first .in{
+				color: #666;
+				font-size:.32rem ;
+			}
+			.last-first .ins{
+				color: red;
+				font-size:.32rem ;
+			}
+			.last span{
+				color: #666;
+				font-size:.34rem ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="home">
+			<div class="Top">
+				<span><a href="javascript:history.go(-1);" onClick="javascript:history.go(-1);"><i class="fa fa-angle-left fa-2x"></i></a></span>
+				<span>公告详情</span>
+				<span><a href="index.html"><i class="fa fa-home fa-2x"></i></a></span>
+			</div>
+			<div class="home-top">
+				<div class="home-top-header">
+					<p>点工网上线了</p>
+					<p>作者：点工网<span>2019-12-30 14:05:55</span></p>
+				</div>			
+				<div class="home-top-next">
+					<p>经过一年左右的筹划，点工网终于上线了，点工网希望为万千家庭和装修工人，弱电施工方和工人的桥梁纽带，免费提供一个需求分享平台，提供方便减少信息不对称。</p>
+				</div>	
+			</div>
+			<div class="home-botton">
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="./images/db1.png" />
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="RecruitWorkers.html">
+							<img src="./images/db2.png" />
+							<p>招工信息</p>
+						</a>
+					</li>
+					<li id="button">
+						<a onclick="disno()">
+							<img src="./images/db3.png" />
+							<p>发布</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueRecruitWorkers.html">
+							<img src="./images/db4.png" />
+							<p>工人找活</p>
+						</a>
+					</li>
+					<li>
+						<a href="MemberCenter.html">
+							<img src="./images/db5.png" />
+							<p>会员</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+				<div class="in">
+					<div class="in-top"></div>
+					<div class="in-list">
+						<ul class="list">
+							<li>
+								<a href="IssueRecruitWorkers.html">
+									<img src="./images/button1.png"/>
+									<p>发布招工</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueJob.html">
+									<img  src="images/button2.png"/>
+									<p>发布找活</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachineryRent.html">
+									<img  src="images/button3.png"/>
+									<p>机械求租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachinery.html">
+									<img src="images/button4.png"/>
+									<p>机械出租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueBiddingAndPurchase.html">
+									<img src="images/button3.png"/>
+									<p>招标采购</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="in-botton">
+							<button  onclick="dis()"></button>
+					</div>
+				</div>
+			
+			<script type="text/javascript" src="attempt.js/xx.js"></script>
+	</body>
+</html>

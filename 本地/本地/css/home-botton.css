@@ -1,0 +1,8 @@
+.home-botton ul li {
+    width: 25%;
+}
+
+.home-botton ul li a img {
+    width: .95rem;
+    height: 1rem;
+}

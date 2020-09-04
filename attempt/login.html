@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/CollectionRecruitment.css"/>
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<script src="attempt.js/pixel.js"></script>		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<script src="./attempt.js/jquery-3.5.1.min.js"></script>
+		<script src="attempt.js/public.js"></script>
+		<title>登录/注册</title>
+		<style>
+			.home{
+				background-color: #ffffff;	
+			}	
+			.header{
+				padding:.25rem;
+				align-items: center;
+			}
+			.header a{
+				padding-left: .2rem;
+				font-size: .26rem;
+				color: #000000;
+			}
+			.header p{
+				margin: 0 auto;	
+			}
+			.header p a{
+				font-size: .32rem;
+				letter-spacing: .08rem;
+				color: #000000;
+			}
+			.main{
+				margin-top: 1rem;
+				width: 100%;
+			}
+			.text{
+				width: 80%;
+				margin: 0 auto;
+			}
+			.text p{
+				margin-top: .3rem;
+				font-size: .3rem;				
+			}
+			.text p img{
+				width: .3rem;
+				vertical-align: middle;
+			}
+			.text p span{
+				padding-left: .15rem;
+				font-size: .24rem;
+			}
+			.text input{
+				width: 88%;
+				margin-top: .3rem;
+				padding-bottom: .3rem;
+				margin-left: .5rem;
+				border: none;
+				border-bottom: .02rem solid #BFBFBF;
+				font-size: .28rem;
+			}
+			.text1{
+				float: right;
+				position: relative;
+				bottom: .6rem;
+				right: .2rem;
+				color: #069BFF;
+			}
+			.dis i{
+				font-size: .4rem;
+				position: relative;
+				left: 87%;
+				bottom: .68rem;
+			}
+			.dis-text{
+				float: right;
+				position: relative;
+				bottom: .6rem;
+				right: .2rem;
+				color: #000000;
+			}
+			.go{
+				width: 80%;
+				margin: .1rem auto;
+				text-align: center;
+			}
+			.go input{
+				border: none;
+				color: #FFFFFF;
+				background: linear-gradient(90deg,#1E99FF 0%,#1C56F9 100%);
+				font-size: .3rem;
+				height: .85rem;
+				border-radius: .1rem;
+				width: 70%;
+				margin: 0 auto;
+			}
+			.go p{
+				margin-top: .2rem;
+				color: #8f8f94;
+				font-size: .28rem;
+				letter-spacing: .02rem;
+			}
+			.go p  a{
+				color: #069BFF;
+			}
+			input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+				-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+		</style>
+	</head>
+	<body>
+		<div class="home">
+			<div class="home-top">	
+				<div class="header">
+					<a href="javascript:history.go(-1)"><i class="fa fa-angle-left fa-2x"></i></a>
+					<p><a href="login.html">登录</a><a>|</a><a href="">注册</a></p>
+				</div>
+				<div class="main">
+					<div class="text">
+						<p><img src="./images/sj.png" /><span>手机号</span></p>
+						<input id="phone" type="text" placeholder="请输入手机号码"/>
+					</div>
+					<div class="text">
+						<p><img src="./images/mima.png" /><span>登录密码</span></p>
+						<div class="dis">
+							<input type="password" id="pwd" placeholder="请输入密码"/>
+							<i id="yj" class="fa fa-eye fa-2x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="go">
+					<input id="btn" class="btn" type="button" value="登录">
+					<p>忘记密码,<a href="RetrievePassword.html">找回密码</a></p>
+				</div>
+			</div>
+			<div class="home-botton">
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="./images/db1.png" />
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="RecruitWorkers.html">
+							<img src="./images/db2.png" />
+							<p>招工信息</p>
+						</a>
+					</li>
+					<li id="button">
+						<a onclick="disno()">
+							<img src="./images/db3.png" />
+							<p>发布</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueRecruitWorkers.html">
+							<img src="./images/db4.png" />
+							<p>工人找活</p>
+						</a>
+					</li>
+					<li>
+						<a >
+							<img src="./images/db5.png" />
+							<p>会员</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+				<div class="in">
+					<div class="in-top"></div>
+					<div class="in-list">
+						<ul class="list">
+							<li>
+								<a href="IssueRecruitWorkers.html">
+									<img src="./images/button1.png"/>
+									<p>发布招工</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueJob.html">
+									<img  src="images/button2.png"/>
+									<p>发布找活</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachineryRent.html">
+									<img  src="images/button3.png"/>
+									<p>机械求租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachinery.html">
+									<img src="images/button4.png"/>
+									<p>机械出租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueBiddingAndPurchase.html">
+									<img src="images/button3.png"/>
+									<p>招标采购</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="in-botton">
+							<button   onclick="dis()"></button>
+					</div>
+				</div>
+			<script type="text/javascript" src="attempt.js/xx.js"></script>
+			<script>
+				// $(document).ready(function(){
+				// 	$("#btn").click(function(){
+				// 		$.post("http://job.ruichangtech.com/mobile/login/checkLogin",
+				// 		{
+				// 			phone:"18270063763",
+				// 			password:"zz1062348882",
+				// 			loginType:"pwd-login"
+				// 		},
+				// 		function(data,status){
+				// 			alert("数据：" + data + "\n状态:" + status);
+				// 		}
+				// 		);
+				// 	});
+				// });
+					
+				
+				// $(document).ready(function(){
+				// 	$(".btn").click(function(){
+				// 		$.ajax({
+						
+				// 			headers: {
+				// 				"X-Requested-With":"XMLHttpRequest"
+ 				// 			},
+				// 			url: 'http://job.ruichangtech.com/mobile/login/checkLogin',
+				// 			type:"post",
+				// 			data:{
+				// 					phone:"18270063763",
+				// 					password:"zz1062348882",
+				// 					loginType:"pwd-login"
+				// 				},
+							
+				// 			success:function(res){	
+				// 				console.log(res)
+				// 				if(res.code ==1){	
+				// 					alert(res.msg)
+				// 					window.location.href = "MemberCenter.html?name=" + $("#phone").val(); 
+				// 				}else{
+				// 					alert(res.msg)
+				// 				}																																																							
+				// 			},error:function(){
+				// 				alert(res.msg)
+				// 			},	
+				// 		});
+				// 	});
+						
+				$(document).ready(function(){
+					$(".btn").click(function(){
+						$.ajax({
+						
+							headers: {
+								"X-Requested-With":"XMLHttpRequest"
+ 							},
+							url: 'http://job.ruichangtech.com/mobile/login/checkLogin',
+							type:"post",
+							data:{
+								phone:$("#phone").val(), 		//"phone":$("").val()
+								password:$("#pwd").val(),
+								loginType:"pwd-login"
+								},
+							
+							success:function(res){	
+								console.log(res)
+								if(res.code ==1){	
+									alert(res.msg)
+									window.location.href = "MemberCenter.html?name=" + $("#phone").val(); 
+								}else{
+									alert(res.msg)
+								}																																																							
+							},error:function(){
+								alert(res.msg)
+							},	
+						});
+					});
+
+					
+				});
+
+				
+					
+			</script>
+	</body>
+</html>

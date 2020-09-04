@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/kindeditor/kindeditor-all.js"></script>
+    <script src="./js/kindeditor/lang/zh-CN.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea id="myKindEditor" name="tcontent"></textarea>
+</body>
+<script>
+    var editor;
+    KindEditor.ready(function(K) {
+        editor = K.create('#myKindEditor', {
+            width: '950px',
+            height: '220px',
+            resizeType: '0'
+        });
+        editor.html("");
+    });
+</script>
+
+</html>

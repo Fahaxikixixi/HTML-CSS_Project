@@ -1,0 +1,32 @@
+.imgs{
+    width: 112px;
+    height: 112px;
+    margin-top: 60px;
+}
+.change{
+    width: 100%;
+   margin: 0;
+    margin-right: 237px;
+}
+
+.imgwei{
+    width: 830px !important;
+}
+.change .texts{
+    font-size: 15px;
+    font-weight: 550;
+}
+.blocks{
+    width: 37px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px !important;
+    font-size: 20px !important;
+    background-color: #ffff2f;
+margin-top: 20px;
+}
+.txstyle{
+    width: 112px;
+    text-align: center;
+    font-size: 14px;
+}

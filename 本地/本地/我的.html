@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta style="width: 375;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home-botton.css">
+    <link rel="stylesheet" href="css/ssjg.css">
+    <script src="./js/pixel.js"></script>
+    <title>我的</title>
+    <style>
+        .home-top {
+            background-color: #F7F6FA;
+        }
+        
+        .personal,
+        .fans {
+            display: flex;
+            align-items: center;
+            padding: .6rem 0 .45rem 0;
+            background-color: #fff;
+        }
+        
+        .personal img:nth-child(1) {
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 2.5rem;
+            margin-left: .65rem;
+        }
+        
+        .personal-info {
+            margin-left: .45rem;
+        }
+        
+        .address {
+            display: flex;
+            align-items: center;
+            margin-bottom: .2rem;
+        }
+        
+        .address img {
+            width: .8rem;
+            height: .8rem;
+            margin: 0 .25rem;
+        }
+        
+        .address .info,
+        .store p {
+            font-size: .2rem;
+            color: #595959;
+        }
+        
+        .fans li {
+            width: 25%;
+        }
+        
+        .fans li a p:nth-child(1) {
+            font-size: .75rem;
+            color: #363636;
+        }
+        
+        .fans li a p:nth-child(2) {
+            font-size: .2rem;
+            color: #BFBFBF;
+        }
+        
+        .my li {
+            width: 100%;
+        }
+        
+        .my li a {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 2rem;
+            line-height: 2rem;
+            box-sizing: border-box;
+            color: #555555;
+            font-size: .7rem;
+            background-color: #fff;
+            margin: .1rem 0;
+            padding: 0 1rem 0 1.15rem;
+        }
+        
+        .my li img {
+            width: .4rem;
+            height: .65rem;
+            padding-top: .65rem;
+        }
+        
+        .phone span {
+            font-size: .65rem;
+            color: #6A6A6A;
+            margin-right: .2rem;
+        }
+        
+        span a {
+            color: #555555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <div class="home-top">
+            <div class="header">
+                <a href="javascript:history.go(-1)"><img src="img/矩形 76.png"></a>
+                <span>我的</span>
+                <a href="首页.html"><img src="img/首页.png" alt=""></a>
+            </div>
+            <div class="textlist">
+                <div class="personal">
+                    <img src="img/图层 9 拷贝 2.png">
+                    <div class="personal-info">
+                        <div class="address">
+                            <span>小包子</span>
+                            <img src="img/组 14.png">
+                            <span class="info">广东 深圳 22 已婚</span>
+                        </div>
+                        <div class="store">
+                            <p>单位名称：阳光宝贝用品店</p>
+                            <p>主营：儿童服装，母婴用品</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="fans">
+                    <li>
+                        <a href="关注列表.html">
+                            <p>6389</p>
+                            <p>关注</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="点赞列表.html">
+                            <p>8947</p>
+                            <p>点赞</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="粉丝列表.html">
+                            <p>5631</p>
+                            <p>粉丝</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <p>5666</p>
+                            <p>人气</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="my">
+                    <li>
+                        <a href="我要发布.html">
+                            <span>我要发布</span>
+                            <img src="img/disclosure arrow.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="我的发布.html">
+                            <span>我的发布</span>
+                            <img src="img/disclosure arrow.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="我的信息.html">
+                            <div class="mynews">
+                                <span>我的消息</span>
+                                <span>8</span>
+                            </div>
+
+                            <img src="img/disclosure arrow.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="修改手机.html">
+                            <span>手机号</span>
+                            <div class="phone">
+                                <span>130*****888</span>
+                                <img src="img/disclosure arrow.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>岛主资格竞选排名</span>
+                            <img src="img/disclosure arrow.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-botton">
+            <ul>
+                <li>
+                    <a href="首页.html">
+                        <img src="img/home.png">
+                        <p>本地发现</p>
+                    </a>
+                </li>
+                <li class="shop">
+                    <a href="本地购物.html">
+                        <img src="img/购物车2.png">
+                        <p>本地购物</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="本地供需.html">
+                        <img src="img/local_gx.png">
+                        <p>本地供需</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="我的.html">
+                        <img src="img/my.png">
+                        <p class="active">我的</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>

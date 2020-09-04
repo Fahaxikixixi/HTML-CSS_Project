@@ -1,0 +1,80 @@
+.content {
+    width: 100%;
+    padding: 1px;
+}
+
+.contentbox {
+    width: 430px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.textcol {
+    color: #f84e4e;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.texthei {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.btnleft,
+.btnright {
+    width: 140px;
+    height: 36px;
+    border: none;
+    color: #ffff;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+
+.btnleft {
+    float: left;
+    background-color: #de3612;
+}
+
+.btnright {
+    float: right;
+    margin-left: 20px;
+    background-color: #bfbfbf;
+}
+
+
+/* */
+
+.fl {
+    margin: 0;
+}
+
+.textone {
+    text-indent: 200px;
+}
+
+.choiceleft,
+.choiceright {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+.choiceright {
+    margin-left: 40px;
+}
+
+.textmar {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.choiceleft input,
+.choiceright input {
+    width: 100px;
+    height: 32px;
+    background-color: #ffff;
+    border: #dcdcdc solid 1px;
+    border-radius: 2px;
+    margin: 15px auto 0;
+}

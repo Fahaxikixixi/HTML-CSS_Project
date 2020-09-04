@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta style="width: 375;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home-botton.css">
+    <link rel="stylesheet" href="css/ssjg.css">
+    <script src="./js/pixel.js"></script>
+    <title>个人主页</title>
+    <style>
+       .home-top{
+           background-color:#F7F6FA ;
+       }
+       .top-img{
+           width: 100%;
+           height: 9.9rem;         
+       }
+       .top-img img{
+           height: 9.9rem;
+       }
+       .personal,.fans{
+           display: flex;
+           align-items: center;
+           padding: .6rem 0 .45rem 0;
+           background-color: #fff;
+       }
+       .personal img:nth-child(1){
+           width: 2.8rem;
+           height: 2.8rem;
+           border-radius: 2.5rem;
+           margin-left: .65rem;
+       }
+       .personal-info{
+           margin-left: .45rem;
+       }
+       .address{
+           display: flex;
+           align-items: center;
+           margin-bottom: .2rem;
+       }
+       .address img{
+           width: .8rem;
+           height: .8rem;
+           margin: 0 .25rem;
+       }
+       .address .info,.store p{
+            font-size: .2rem;
+            color: #595959;
+       }
+       .fans{
+           border-top:#E5E5E5 solid .05rem ;
+           border-bottom: #E5E5E5 solid .05rem ;
+           margin: 0 .25rem;
+       }
+       .fans li{
+           width: 25%;
+           border-left: #E5E5E5 solid .05rem;
+       }
+       .fans li:nth-child(1){
+           border: none;
+       }
+       .fans li p:nth-child(1){
+           font-size: .75rem;
+           color: #363636;
+           
+       }
+       .fans li p:nth-child(2){
+           font-size: .2rem;
+           color: #BFBFBF;
+       }
+       .item{
+           display: flex;
+           justify-content: center;
+           width: 100%;
+           margin: 0 .25rem;
+           background-color: #fff;
+           font-size: .4rem;
+           color: #BFBFBF;
+       }
+       .item li{
+           width: 25%;
+       }
+       .item li:nth-child(1){
+           border-top: #FD4C46 solid .05rem;
+           color: #FD4C46;
+       }
+       .infos{
+           width: 100%;
+           margin: .15rem 1rem 0 1rem;
+           background-color: #fff;
+       }
+       .infos li{
+           width: 100%;
+           text-align: left;
+           margin-left: .6rem;
+       }
+       .infos li p:nth-child(1){
+            font-size: .7rem;
+            font-weight: 550;
+            padding: .5rem 0 .1rem 0;
+           
+       }
+       .infos li p:nth-child(2){
+           font-size: .4rem;
+           color: #414141;
+           padding-bottom: .75rem;
+        }
+        .inpt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 2rem;
+            margin: .5rem 1.1rem 1rem 1.1rem;
+        }
+        .inpt input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: linear-gradient(00deg ,#FD4B45,#FD815B);
+            color: #fff;
+        }
+        .inpt input:nth-child(1){
+           border-top-left-radius:2rem;
+           border-bottom-left-radius:2rem;
+        }
+        .inpt::before{
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: .3rem;
+            height: 1rem;
+            left: 5.5rem;
+            top: .05rem;
+           background-color: #F7F6FA ;
+           border-radius: 1rem;  
+        }
+        .inpt::after{
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: .3rem;
+            height: 1rem;
+           right: 5.5rem;
+            top: .05rem;
+           background-color: #F7F6FA ;
+           border-radius: 1rem;  
+        }
+        .inpt input:nth-child(3){
+            border-top-right-radius:2rem;
+           border-bottom-right-radius:2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="home">
+    <div class="home-top">
+        <div class="header">
+            <a href="javascript:history.go(-1)"><img src="img/矩形 76.png"></a>
+            <span>个人主页</span>
+            <a href="首页.html"><img src="img/首页.png" alt=""></a>
+        </div>
+        <div class="textlist">
+            <div class="top-img"><img src="img/home_banner.png"></div>
+            <div class="personal">
+                <img src="img/图层 9 拷贝 2.png">
+                <div class="personal-info">
+                    <div class="address">
+                        <span>小包子</span>
+                        <img src="img/组 14.png">
+                        <span class="info">广东 深圳 22 已婚</span>
+                    </div>
+                    <div class="store">
+                        <p>单位名称：阳光宝贝用品店</p>
+                        <p>主营：儿童服装，母婴用品</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="fans">
+                <li>
+                    <p>6389</p>
+                    <p>关注</p>
+                </li>
+                <li>
+                    <p>8947</p>
+                    <p>点赞</p>
+                </li>
+                <li>
+                    <p>5631</p>
+                    <p>粉丝</p>
+                </li>
+                <li>
+                    <p>5666</p>
+                    <p>人气</p>
+                </li>
+            </ul>
+           <ul class="item">
+               <li>个人资料</li>
+               <li>本地购物</li>
+               <li>本地供需</li>
+               <li>本地发现</li>
+           </ul>
+           <ul class="infos">
+               <li>
+                   <p>个人资料</p>
+                   <p>
+                        <span>小包子</span>
+                        <span>女</span>
+                        <span>已婚</span>
+                        <span>163cm</span>
+                        <span>广东 深圳</span>
+                        <span>教师</span>
+                        <span>本科</span>
+                    </p>
+               </li>
+               <li>
+                    <p>店铺信息</p>
+                    <p>
+                        <span>单位名称：</span>
+                        <span>阳光用品店</span>
+                        <span>主营：</span>
+                        <span>儿童服装，母婴用品</span>
+                        
+                    </p>
+               </li>
+               <li>
+                    <p>联系地址</p>
+                    <p>
+                        <span>江西省南昌市青云谱区xxxxx</span>
+                    </p>
+               </li>
+           </ul>
+           <div class="inpt">
+                <input type="button" value="关注">
+                <input type="button" value="定位">
+                <input type="button" value="电话">
+           </div>
+                
+        </div>
+    </div>
+    <div class="home-botton">
+        <ul>
+            <li>
+                <a href="首页.html">
+                    <img src="img/home_active.png">
+                    <p>本地发现</p>
+                </a>
+            </li>
+            <li class="shop">
+                <a href="本地购物.html">
+                    <img src="img/购物车2.png">
+                    <p>本地购物</p>
+                </a>
+            </li>
+            <li>
+                <a href="本地供需.html">
+                    <img src="img/local_gx.png">                                       
+                    <p>本地供需</p>
+                </a>
+            </li>
+            <li>
+                <a href="我的.html">
+                    <img src="img/my.png">
+                    <p>我的</p>
+                </a>
+            </li>      
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.content-right {
+    padding-top: 72px;
+}
+
+.change {
+    margin: 72px 100px 0 80px;
+}
+
+.content-righttext {
+    width: 100%;
+    border: #a9bfc6 solid 1px;
+    border-bottom: none;
+}
+
+.textheight {
+    line-height: 90px !important;
+    text-align: center;
+}
+
+.menutext {
+    text-align: center;
+}
+
+.pay,
+.unpay {
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.unpay {
+    background-color: #5779f9;
+    color: #ffffff;
+    padding: 0 6px;
+}
+
+.menu li {
+    float: left;
+    width: 14%;
+    color: #333333;
+    font-size: 14px;
+}
+
+.submenu li {
+    float: left;
+    height: 90px;
+    min-height: 90px;
+    width: 14%;
+    line-height: 24px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.menu::after,
+.submenu::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.menu,
+.submenu {
+    width: 100%;
+    border: #a9bfc6 solid 1px;
+    border-top: none;
+}
+
+.menu {
+    padding-bottom: 30px;
+    clear: both;
+    zoom: 1;
+}
+
+.submenu {
+    min-height: 100px;
+    clear: both;
+    zoom: 1;
+}
+
+.menu li a,
+.submenu li a {
+    color: #5779f9;
+}

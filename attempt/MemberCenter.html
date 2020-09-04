@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/CollectionRecruitment.css"/>
+		<script src="attempt.js/jquery-3.5.1.min.js"></script>
+		<script src="attempt.js/pixel.js"></script>
+		<title>会员中心</title>
+		<style>
+			.home{
+				background-color: #FFFFFF;	
+			}	
+			.header-top{
+				background-image: url(images/bjt.png);
+				background-repeat:no-repeat ;
+				background-size:100%  100%;
+				width: 100%;
+				height: 32%;
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				align-items: center;
+				margin-bottom: .2rem;
+			}
+			
+			.header-top p:nth-child(1){
+				font-size: .38rem;
+				color: #FFFFFF;
+				padding-top: .2rem;
+			}
+			.header-top p:nth-child(2){
+				color: #FFFFFF;
+				font-size: .33rem;
+				padding-top: .3rem;
+			}
+			.header-top p:nth-child(3){
+				color: #FFFFFF;
+				font-size: .34rem;
+			}
+			.header-top img{
+				width: 1.55rem;
+				border: .05rem solid #FFFFFF;
+				border-radius: 50%;
+				margin-bottom: .15rem;
+				margin-top: .2rem;
+			}
+			nav ul{
+				display: flex;
+				flex-flow: row wrap;
+				text-align: center;
+				margin-top: 1rem;
+			}
+			nav ul li{
+				width: 33.33%;
+				padding-top: .05rem;
+			}
+			nav ul li img{
+				width: 1rem;
+			}
+			nav ul li p{
+				font-size: .28rem;
+				margin-top: .15rem;
+				margin-bottom: .2rem;
+				color: #282828;
+			}
+			.go{
+				width: 100%;
+				margin: .25rem auto;
+			}
+			.go input{
+				width: 50%;
+				margin: 0 auto;
+				border: none;
+				color: #FFFFFF;
+				background-color: red;
+				font-size: .3rem;
+				height: .7rem;
+				border-radius: .1rem;
+			}
+			.in{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+			.in-top{
+				background: url(images/bj.png) no-repeat;
+				background-size:contain;
+				height: 100%;
+				width: 100%;				
+			}
+			.in-list{
+				margin-top: .2rem;
+			}
+			.in-list ul{
+				display: flex;
+				position: absolute;
+				width: 90%;
+				margin: 0 auto;
+				text-align: center;
+				margin-left: .4rem;
+				bottom: 1.8rem;
+			}
+			.in-list ul li{
+				position: relative;
+				text-align: center;
+				margin: 0 .08rem;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+			.in-list ul li img{
+				width: 1.2rem;
+				height: 1.2;
+			}
+			.in-list li p{
+				font-size: .25rem;
+				color: #555;
+				font-weight: bold;
+				line-height: .7rem;
+				text-align: center;
+			}
+			.in-botton img{
+				position: absolute;
+				transform: rotate(45deg);
+				width: .4rem;
+				bottom: 1rem;
+				left: 47%;
+				
+				transform: scale(.2);
+			}
+			.in-botton button{
+				border: none;
+				background: url("images/cuo.png") no-repeat;
+				background-size:25%;
+				transform: rotate(45deg);
+				position: absolute;
+				height: 2rem;
+				width: 2rem;
+				bottom:-.8rem;
+				left: 37%;
+				outline: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="home">
+			<div class="home-top">	
+				<div class="header-top">
+					<p>会员中心</p>
+					<p id="p-id">12345678901</p>
+					<p>积分:0</p>
+					<img src="./images/hyzx.png" />
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="ReleaseRecruitment.html">
+								<img src="./images/member1.png">
+								<p>已发布招工</p>
+							</a>
+						</li>
+						<li>
+							<a href="Published_job.html">
+								<img src="./images/member2.png">
+								<p>已发布找活</p>
+							</a>
+						</li>
+						<li>
+							<a href="Published_jxqz.html">
+								<img src="./images/member3.png">
+								<p>已发布机械求租</p>
+							</a>
+						</li>
+						<li>
+							<a href="Published_jxcz.html">
+								<img src="./images/member4.png">
+								<p>已发布机械出租</p>
+							</a>
+						</li>
+						<li>
+							<a href="Published_zbcg.html">
+								<img src="./images/member5.png">
+								<p>已发布采购招标</p>
+							</a>
+						</li>
+						<li>
+							<a href="GetPoints.html">
+								<img src="./images/member6.png">
+								<p>获取积分</p>
+							</a>
+						</li>
+						<li>
+							<a href="PointsConsumption.html">
+								<img src="./images/member7.png">
+								<p>积分消耗记录</p>
+							</a>
+						</li>
+						<li>
+							<a href="PointsSource.html">
+								<img src="./images/member8.png">
+								<p>积分来源</p>
+							</a>
+						</li>
+						<li>
+							<a href="InvitationMethod.html">
+								<img src="./images/member9.png">
+								<p>邀请工友</p>
+							</a>
+						</li>
+						<li>
+							<a href="CollectionRecruitment.html">
+								<img src="./images/member10.jpg">
+								<p>招工找活收藏</p>
+							</a>
+						</li>
+						<li>
+							<a href="MachineryRental .html">
+								<img src="./images/member11.jpg">
+								<p>机械求出租收藏</p>
+							</a>
+						</li>
+						<li>
+							<a href="RealName.html">
+								<img src="./images/member12.png">
+								<p>实名认证</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="go">
+					<input id="out" type="submit" value="退出">
+				</div>
+			</div>
+			<div class="home-botton">
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="./images/db1.png" />
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="RecruitWorkers.html">
+							<img src="./images/db2.png" />
+							<p>招工信息</p>
+						</a>
+					</li>
+					<li id="button">
+						<a onclick="disno()">
+							<img src="./images/db3.png" />
+							<p>发布</p>
+						</a>
+					</li>
+					<li>
+						<a href="IssueRecruitWorkers.html">
+							<img src="./images/db4.png" />
+							<p>工人找活</p>
+						</a>
+					</li>
+					<li>
+						<a id="a-href" href="MemberCenter.html">
+							<img src="./images/db5.png" />
+							<p>会员</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+				<div class="in">
+					<div class="in-top"></div>
+					<div class="in-list">
+						<ul class="list">
+							<li>
+								<a href="IssueRecruitWorkers.html">
+									<img src="./images/button1.png"/>
+									<p>发布招工</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueJob.html">
+									<img  src="images/button2.png"/>
+									<p>发布找活</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachineryRent.html">
+									<img  src="images/button3.png"/>
+									<p>机械求租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueMachinery.html">
+									<img src="images/button4.png"/>
+									<p>机械出租</p>
+								</a>
+							</li>
+							<li>
+								<a href="IssueBiddingAndPurchase.html">
+									<img src="images/button3.png"/>
+									<p>招标采购</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="in-botton">
+							<button  onclick="dis()"></button>
+					</div>
+				</div>
+			
+			<script type="text/javascript" src="attempt.js/xx.js"></script>
+			<script>
+				$(document).ready(function() {
+					var loc = location.href;
+					var n1 = loc.length;//地址的总长度
+					var n2 = loc.indexOf("=");//取得=号的位置
+					var id = decodeURI(loc.substr(n2+1, n1-n2));//从=号后面的内容
+					var f = id;
+					$("#p-id").html(f)
+
+					$("#out").click(function () {
+						$("#p-id").html('');
+						window.location.href="login.html";
+					});
+				});
+			</script>
+	</body>
+</html>

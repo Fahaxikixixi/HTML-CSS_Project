@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .w{
+            width: 100%;
+            height: 300px;
+        }
+        .one{
+            background-color: chocolate;
+        }
+        .two{
+            background-color: cornflowerblue;
+        }
+        .three{
+            background-color: darkcyan;
+        }
+        .four{
+            background-color: darkslategray;
+        }
+        .list{
+            position: fixed;
+            width: 15%;
+            left: 0;
+            top: 20px;
+            display: none;
+        }
+        .list ul{
+            background-color: firebrick;
+            list-style-type: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="one w">one</div>
+    <div class="two w">two</div>
+    <div class="three w">three</div>
+    <div class="four w">four</div>
+    <div class="list">
+        <ul>
+            <li>go-one</li>
+            <li>go-two</li>
+            <li>go-three</li>
+            <li>go-four</li>
+        </ul>
+    </div>
+    <script src="jq/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+           
+            var top = $('.two').offset().top;
+            $(window).scroll(function(){
+                if($(document).scrollTop() >= top){
+                    $('.list').fadeIn();
+                }else{
+                    $('.list').fadeOut();    
+                };
+          });
+            $('.list li').click(function(){
+                var gotop = $('.w').eq($(this).index()).offset().top;
+                $('html').stop().animate({
+                    scrollTop:gotop
+                });
+            });
+            
+           
+
+        });
+    </script>
+</body>
+</html>

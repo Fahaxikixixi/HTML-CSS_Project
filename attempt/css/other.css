@@ -1,0 +1,64 @@
+.in{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.in-top{
+	background: url(../images/bj.png) no-repeat;
+	background-size:contain;
+	height: 100%;
+	width: 100%;				
+}
+.in-list{
+	margin-top: .2rem;
+}
+.in-list ul{
+	display: flex;
+	position: absolute;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-left: .4rem;
+	bottom: 1.8rem;
+}
+.in-list ul li{
+	position: relative;
+	text-align: center;
+	margin: 0 .08rem;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.in-list ul li img{
+	width: 1.2rem;
+	height: 1.2;
+}
+.in-list li p{
+	font-size: .25rem;
+	color: #555;
+	font-weight: bold;
+	line-height: .7rem;
+	text-align: center;
+}
+.in-botton img{
+	position: absolute;
+	transform: rotate(45deg);
+	width: .4rem;
+	bottom: 1rem;
+	left: 47%;
+	
+	transform: scale(.2);
+}
+.in-botton button{
+	border: none;
+	background: url(../images/cuo.png) no-repeat;
+	background-size:25%;
+	transform: rotate(45deg);
+	position: absolute;
+	height: 2rem;
+	width: 2rem;
+	bottom:-.8rem;
+	left: 37%;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

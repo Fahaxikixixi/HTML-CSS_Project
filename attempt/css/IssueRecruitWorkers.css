@@ -1,0 +1,110 @@
+.home{
+				background-color: #FFFFFF;
+			}
+			.main{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-h{							
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: .3rem;
+				border-bottom:.01rem dotted #cecdd1;
+				padding-bottom: .3rem;
+			}
+			.main-h p{
+				color: #3185E6;
+				font-size: .31rem;
+				font-weight: bold;
+				letter-spacing: .03rem;
+			}
+			.main-text{
+				display: flex;
+				margin: .4rem .1rem;
+			}
+			.main-text span{
+				width: 1.3rem;
+				height: .4rem;
+				font-size: .3rem;
+				text-align-last: justify;
+				color: #000000;
+				font-weight: bold;
+				margin-left: .15rem;
+			}
+			.main-text input{
+				border: none;
+				background-color: #FFFFFF;
+				font-size: .26rem;
+				padding-left: .6rem;
+				letter-spacing: .05rem;
+			}
+			.main-dis{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-text textarea{
+				border: none;
+				background-color: #FFFFFF;
+				outline: none;
+				width: 93%;
+				letter-spacing: .02rem;
+				height: 2.2rem;
+				margin-top:.2rem ;
+				margin-left: .4rem;
+				font-size: .3rem;
+			}
+			.main-texts{
+				color: #666;
+				text-align: right;
+				font-size: .3rem;
+			}
+			.go{
+				width: 100%;
+				text-align: center;
+			}
+			.go button{
+				border: none;
+				color: #FFFFFF;
+				height: .75rem;
+				width: 30%;
+				font-size: .3rem;
+				border-radius: .12rem;
+				background: linear-gradient(0deg, #1e9aff, #1c54f9);
+				margin-top:.18rem ;
+			}
+			:focus{
+				outline:0;
+			}
+			.last{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.last-first{				
+				margin:.2rem auto .1rem auto;
+				text-align: center;
+				padding-bottom: .2rem;
+				width: 100%;
+				border-bottom: .01rem dashed #069BFF;				
+			}
+			.last-first .fo{
+				color: #666;
+				font-size:.3rem ;
+			}
+			.last-first i{
+				color: #1c54f9;
+				font-size: .33rem;
+			}
+			.last-first .in{
+				color: #666;
+				font-size:.32rem ;
+			}
+			.last-first .ins{
+				color: red;
+				font-size:.3rem ;
+			}
+			.last span{
+				color: #00000;
+				font-size:.28rem ;
+			}

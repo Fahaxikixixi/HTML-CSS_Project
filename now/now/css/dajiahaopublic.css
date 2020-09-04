@@ -1,0 +1,187 @@
+/*主要架子部分*/
+
+
+/* 清除浮动 */
+
+.clear {
+    zoom: 1;
+    clear: both;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+#header,
+#footer {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+.container-wrap {
+    width: 100%;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.content-wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.aside {
+    width: 200px;
+    height: 100%;
+    /* margin-left: -100%; */
+}
+
+.content-wrap {
+    height: 100%;
+    width: 0px;
+}
+
+.contents {
+    height: 100%;
+    margin-left: 235px;
+    /* min-width: 2000px; */
+}
+
+.contents::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.content-right {
+    height: 100%;
+    min-height: 900px;
+    min-width: 960px;
+    padding-left: 64px;
+    border-left: #a9bfc6 solid 1px;
+}
+
+
+/*内容样式*/
+
+.header {
+    border-bottom: #a9bfc6 solid 1px;
+}
+
+.headercenter {
+    min-width: 960px;
+    height: 67px;
+    line-height: 67px;
+    margin: 0 43px 0 28px;
+    zoom: 1;
+}
+
+.headercenter::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.textcolor {
+    color: #ff0000 !important;
+}
+
+.headerleft {
+    float: left;
+}
+
+.headerleft a {
+    font-size: 25px;
+    color: #333333;
+}
+
+.headerleft img {
+    vertical-align: middle;
+}
+
+.headerright {
+    float: right;
+    height: 67px;
+}
+
+.headerright a {
+    color: #666666;
+    font-size: 15px;
+}
+
+.headerright img {
+    width: 27px;
+    height: 21px;
+    vertical-align: middle;
+}
+
+.addborder {
+    padding: 0 15px;
+    border-left: #dcdcdc solid 1px;
+    border-right: #dcdcdc solid 1px;
+}
+
+.add {
+    width: 24px !important;
+    height: 22px !important;
+    margin-right: 10px;
+}
+
+.addpadding {
+    margin: 0 10px;
+}
+
+.content {
+    height: 100%;
+    width: 1480px;
+    margin: 0 43px 0 28px;
+    zoom: 1;
+}
+
+.content_list {
+    float: left;
+    width: 154px;
+    height: 100%;
+    margin-left: 35px;
+}
+
+.content_list li {
+    height: 59px;
+    width: 160px;
+    line-height: 59px;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.content_list li img {
+    height: 21px;
+    width: 21px;
+    vertical-align: middle;
+}
+
+.distance {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.footer {
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-top: #a9bfc6 solid 1px;
+    clear: both;
+}
+
+.footer a {
+    color: #666666;
+    font-size: 15px;
+    margin: 0 32px;
+}
