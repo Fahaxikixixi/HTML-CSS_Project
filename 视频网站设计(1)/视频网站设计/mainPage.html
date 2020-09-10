@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+        window.onload = function () {
+            document.querySelectorAll('.copyDom').forEach(d => {
+                var num = parseInt(d.getAttribute('data-num')) - 1;
+                [...new Array(num)].forEach(e => {
+                    d.parentElement.appendChild(d.cloneNode(true));
+                });
+            });
+        };
+    </script>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		width: 100%;
+		background-color: rgba(245, 245, 245, .9);
+
+	}
+
+	.fvc {
+		display: flex;
+		align-items: center;
+	}
+
+	.pageHead .head-banner {
+		height: 290px;
+		overflow: hidden;
+		font-size: 0;
+	}
+
+	.pageHead .head-banner img {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+		filter: brightness(80%);
+		-webkit-filter: brightness(80%);
+	}
+
+	.pageHead .head-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pageHead .head-info-pic {
+		height: 90px;
+		width: 90px;
+		background-color: #ffffff;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+		padding: 5px;
+		cursor: pointer;
+		box-sizing: border-box;
+		border-radius: 50%;
+		margin-top: -52px;
+		transition: all .7s linear;
+		position: relative;
+		/*为图片部分拉高一个层级，仅此而已*/
+
+	}
+
+	.pageHead .head-info-pic:hover {
+		animation: aniDance 1.5s ease-out infinite;
+	}
+
+	@keyframes aniDance {
+		0% {
+			transform: translateY(0) scale(1.1);
+		}
+
+		15% {
+			transform: translateY(-10px) scale(1.1);
+		}
+
+		30% {
+			transform: translateY(0) scale(1.1);
+		}
+
+		45% {
+			transform: translateY(-10px) scale(1.1);
+		}
+
+		60% {
+			transform: translateY(0) scale(1.1);
+		}
+
+		100% {
+			transform: translateY(0) scale(1.1);
+		}
+	}
+
+
+	.pageHead .head-info-pic img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+
+	.pageHead .head-info-name {
+		padding-top: 10px;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	.pageSection {}
+
+	/*  */
+	.videoList {
+		width: 100%;
+		padding: 20px 4%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.videoItem {
+		width: 290px;
+		border-radius: 6px;
+		overflow: hidden;
+		border: 0px solid red;
+		background-color: white;
+		cursor: pointer;
+		transition:all .4s ease-out;
+		margin: 10px;
+	}
+
+	.videoItem:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+	}
+
+	.videoItem-head {
+		width: 100%;
+		height: 180px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.videoItem-head-bg {
+		width: 100%;
+		height: 100%;
+		background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595824309064&di=c492e3f41c762112c9aaf579f9d10cf7&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170420%2F20170420105628_ea6da92abc46098d8e03ad2ee55abeb7_9.jpeg') 50% 50% no-repeat;
+		background-size: cover;
+		filter: blur(9px);
+		-webkit-filter: blur(9px);
+	}
+
+	.videoItem-head-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		overflow: hidden;
+	}
+
+	.videoItem-head-img img {
+		height: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.videoItem-head-time {
+		position: absolute;
+		padding: 5px 10px;
+		background-color: rgba(0, 0, 0, .5);
+		color: white;
+		font-size: 13px;
+		bottom: 7px;
+		right: 7px;
+		border-radius: 4px;
+	}
+
+	.videoItem-info {
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.videoItem-info-title {
+		padding-top: 5px;
+		padding-bottom: 8px;
+		padding-right: 55px;
+		box-sizing: border-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: rgb(64, 90, 117);
+		font-size: 14px;
+	}
+
+	.videoItem-info-player {
+		font-size: 12px;
+		color: rgb(108, 130, 153);
+	}
+</style>
+
+<body>
+	<div class="pageHead">
+		<div class="head-banner">
+			<img src="images/head_banner2.jpg" alt="">
+		</div>
+		<div class="head-info">
+			<div class="head-info-pic">
+				<img src="images/pic.jpeg">
+			</div>
+			<div class="head-info-name">我的世界</div>
+		</div>
+
+	</div>
+	<div class="pageSection">
+		<!-- 视频列表模块 -->
+		<div class="module module_video">
+			<div class="module-title"></div>
+			<div class="module-content">
+				<div class="videoList">
+					<!-- 1 -->
+					<div class="videoItem copyDom" data-num='8'>
+						<div class="videoItem-head">
+							<div class="videoItem-head-bg"></div>
+							<div class="videoItem-head-img">
+								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595824309064&di=c492e3f41c762112c9aaf579f9d10cf7&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170420%2F20170420105628_ea6da92abc46098d8e03ad2ee55abeb7_9.jpeg"
+									alt="">
+							</div>
+							<div class="videoItem-head-time">1分20秒</div>
+						</div>
+						<div class="videoItem-info">
+							<div class="videoItem-info-title">声音甜美的高颜值女神大尺度私房照片</div>
+							<div class="videoItem-info-player fvc">
+								<img src="images/player.png" width="20" height="20" style="margin-right: 8px;">
+								<span>播放次数:123123次</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pageFoot">
+
+	</div>
+
+
+</body>
+
+</html>
